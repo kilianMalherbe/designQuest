@@ -1,0 +1,164 @@
+@import url("https://use.typekit.net/kse4jta.css");
+
+:root {
+  --vertPastel: #8fd8c3;
+  --jaunePastel: #ffe2a9;
+  --rosePastel: #ffb6b8;
+
+ --vertFonce: #408671;
+  --orange: #ff8e19;
+  --rose: #ef2c30;
+}
+
+body {
+  background-color: var(--jaunePastel);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.ControlList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #a2a2a2;
+  border-radius: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+* {
+  font-family: "a-day-without-sun-text", sans-serif !important;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--rosePastel);
+  font-family: "a-day-without-sun-text", sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold !important;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--rosePastel);
+}
+
+@media (max-width: 700px) {
+  #GlobalContainer {
+    flex-direction: column;
+    gap: 0rem;
+  } 
+}
+
+@media (min-width: 900px) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    width: 50px;
+  }
+}
+
+#PlayerContainer {
+  flex: 2;
+  max-width: 800px;
+}
+
+#recentScore {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: -54px;
+}
+
+#refrech {
+  background-color: var(--vertPastel);
+}
+
+.PlayerList {
+  border: 3px solid #a2a2a2;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow-y: auto;
+  height: 600px;
+}
+
+.PlayerList::-webkit-scrollbar, .PlayerList::-webkit-scrollbar-thumb {
+  border-radius: 0 20px 20px 0;
+}
+
+.SinglePlayer {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.PlayerList > .SinglePlayer:nth-child(even) {
+  background: rgb(244, 244, 244);
+}
+
+.PlayerList > .SinglePlayer:first-child sup {
+  color: gold;
+}
+
+.PlayerList > .SinglePlayer:nth-child(2) sup {
+  color: silver;
+}
+
+.PlayerList > .SinglePlayer:nth-child(3) sup {
+  color: brown;
+}
+
+
+.title-sm {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  margin-bottom: 20px;
+}
+
+/* Sroll Bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #dfc590;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c8af7d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bea777;
+}

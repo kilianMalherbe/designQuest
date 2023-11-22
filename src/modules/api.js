@@ -2,7 +2,7 @@ import DisplayData from './display.js';
 
 export default class Api {
   constructor() {
-    this.GameId = 'k1cqj5EfW7sE2jfiGdwm';
+    this.GameId = 'z4dulpODrarDHwt0bheN';
     this.ApiEndPoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${this.GameId}/scores/`;
   }
 
